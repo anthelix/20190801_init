@@ -1,0 +1,3 @@
+#La configuration IP et la route par défaut concernaient le noyau Linux. Les serveurs DNS concernent le résolveur, une fonction logicielle qui permet de traduire les noms de domaines en adresses IP. Ce résolveur utilise pour cela les serveurs dont les adresses sont notées dans le fichier /etc/resolv.conf.
+
+/etc/resolv.conf

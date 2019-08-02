@@ -1,0 +1,5 @@
+# Ce fichier contient les correspondances des adresses IP aux noms d'hôtes.    
+# Chaque entrée doit être sur une ligne propre. L'adresse IP doit être placée           # dans la première colonne, suivie par le nom d'hôte correspondant. L'adresse          
+# IP et le nom d'hôte doivent être séparés par au moins un espace. 
+
+/etc/hosts

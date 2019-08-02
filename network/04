@@ -1,0 +1,5 @@
+#identifiez la gateway par défaut dans la table de routage
+#netstats -n networkmadress as numbers -r routine table
+netstat -nr | grep -A 0  'default' | grep 'en0'
+# et aussi
+ipconfig getoption en0 router
