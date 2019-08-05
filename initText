@@ -1,0 +1,53 @@
+NETWORK
+
+1 -> ifconfig -l
+2a -> ifconfig en0 | grep broadcast | cut -d ' ' -f6 	-> ifconfig _L en0
+2b -> arp -a
+3 -> networksetup -listallhardwareports | grep -A 2 Wi-Fi 	-> ifconfig en1 ether | awk '/ether/{print $2}'
+								-> ifconfig en1 | awk '/ether/{print $2}' awk affiche la valeur apres ether, $1 afficherait ether
+4 -> ipconfig getoption en0 router 	-> netstat -nr | grep -A 0  'default' | grep 'en0'
+					-> netstat -nr | grep default -m 1 | awk '/default/{print $2}'
+5 -> host -t a  slash16.org 	-> nslookup -q=NS slash16.org | sed q | awk '{print $2}'
+				-> dig slash.org | grep SERVER | awk '{print $3}' | awk -F '[()]' 'print $2'
+				-> dig slash16.org | grep SERVER | cut -d "(" -f 2 | cut -d ")" -f 1 
+6 -> /etc/resolv.conf 	-> /var/run/resolv.conf 	
+			-> cat /var/run/resolv.conf
+7 -> dig @8.8.8.8 slash16.org 	-> dig @8.8.8.8 slash16.org +short 	
+				-> nslookup slash16.org 8.8.8.8
+				
+8 -> AWS #whois slash16.org	-> amazon-th2.par.franceix .net
+				-> nslookup slash16.org | grep
+9 -> 62.210.32.189 #curl ifconfig.me 	-> dig @8.8.8.8 42.fr +short
+					-> nslookup 42.fr 8.8.8.8.8 # non-authoritative answer 250.12, .13, .11
+10 -> traceroute www.slash16.org 	-> traceroute slash16.org
+11 -> nat-1, 10.60.1.11 # NAT == Network Adress Translation, nat-1 est l'appareil qui fait la jointure entre le reseau local et endehors
+12 -> ipconfig getifaddr en0
+13 -> # host (+ ipconfig getifaddr en0), 13.9.11.10.in-addr.arpa domain name pointer e1r9p13.42.fr	-> DHCP, Dynamic Host Configuration Protocol, protocol client/server fournit IP hote a partir de masque sou reseau et de la passerelle (gateway)
+													-> dig +short -x (+IP)
+14 -> /etc/hosts
+15 -> echo 'intr.42.fr 49.19.122.85' >> /ets/hosts -> echo 'https://profile.intra42.fr/ 49.19.122.85' >> /etc/hosts #faut etre root 
+
+
+SYSTEM 
+
+1 -> /etc/debian_version -> # cat /etc/debian_version
+2 ->  sudo hostname <new_name> # hostname pour verifier
+3 -> /etc/hostname # and /etc/hosts
+4 -> uptime #duree l'heure: who -b ou uptime -s
+5 -> sudo service ssh status # ou systemctl status sshd ...stop ... restart .. start
+6 -> systemctl retstart sshd
+7 -> cat /var/run/sshd.pid
+8 ->
+9 -> who # w more verbose
+10 -> sudo fdisk -l
+11 -> df -h #+ nom du dossier ou raccourcis
+12 -> du -h -d 1 /var # voir pour les classer par ordre
+13 -> top # affiche par cpu plus gourmand# ou ps
+14 -> tail -f /var/log/syslog &
+15 -> pkill tail
+16 -> cron
+17 -> ssh login@ipdeloop
+18 -> sudo systemctl stop sshd
+19 -> systemctl /daemon
+20 -> cat /etc/passwd | awk -F: '{print $ 1}'
+21 -> 

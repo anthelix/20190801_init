@@ -1,0 +1,3 @@
+#donne le temps 
+uptime
+#donne l'heure : who -b, uptime -s
