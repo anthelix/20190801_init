@@ -1,0 +1,7 @@
+ientifier adresse MAC carte wifi
+#Media Access Control), parfois nommée adresse physique, est un identifiant physique stocké dans une carte réseau ou une interface réseau similaire. À moins qu'elle n'ait été modifiée par l'utilisateur, elle est unique au monde.
+#grep -A 3   context de la ligne
+
+
+
+networksetup -listallhardwareports | grep -A 2 Wi-Fi 

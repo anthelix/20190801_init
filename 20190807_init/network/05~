@@ -1,0 +1,2 @@
+#-t option is used to select the query type (ici le a) 
+host -t a  slash16.org

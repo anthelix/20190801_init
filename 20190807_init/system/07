@@ -1,0 +1,2 @@
+#!/bin/bash
+ps ax -o pid,user,cmd | grep 'user/sbin/sshd' | awk '/root/{print S1}'

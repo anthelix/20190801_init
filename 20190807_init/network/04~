@@ -1,0 +1,2 @@
+#!/bin/bash
+netstat -nr | grep -A 0  'default' | grep 'en0'

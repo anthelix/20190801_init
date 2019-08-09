@@ -1,0 +1,29 @@
+#sudo service --status-all ou ls -l /etc/init.d
+#daemon : désigne un programme qui s'éxécute en arrière-plan
+ [ - ]  alsa-utils
+ [ - ]  anacron
+ [ + ]  apparmor
+ [ + ]  avahi-daemon
+ [ - ]  bluetooth
+ [ - ]  console-setup.sh
+ [ + ]  cron
+ [ + ]  dbus
+ [ + ]  gdm3
+ [ - ]  hwclock.sh
+ [ - ]  keyboard-setup.sh
+ [ + ]  kmod
+ [ + ]  network-manager
+ [ + ]  networking
+ [ - ]  plymouth
+ [ - ]  plymouth-log
+ [ - ]  pppd-dns
+ [ + ]  procps
+ [ + ]  rsyslog
+ [ - ]  saned
+ [ - ]  screen-cleanup
+ [ - ]  speech-dispatcher
+ [ + ]  ssh
+ [ - ]  sudo
+ [ + ]  udev
+ [ + ]  unattended-upgrades
+ [ - ]  x11-common

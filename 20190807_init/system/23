@@ -1,0 +1,13 @@
+en mode graphique:
+   - si deja sur une session encours d'un utilisateur, 
+   	 		  -> cliquer sur "changer d'utilateur'"
+			  -> cliquer sur le login du nouvel utilisateur
+			  -> entrer le mot de passe
+   - si debut de session:
+   	 	  -> cliquer sur le login du nouvel utilisateur
+          -> entrer le mot de passe 
+en mode session ssh 
+   				-> envoi de la cle publique depuis le client(ssh-copy-id -i /Users/schatagn/.ssh/id_rsa.pub lanfeust@10.11.200.158)
+				-> se connecter auserveur (ssh 'lanfeust@10.11.200.158)
+				-> mdp de la cle(meme cle que 1er user)
+				

@@ -1,0 +1,4 @@
+#/etc/hosts
+#fichier utilisé par le système d'exploitation d'un ordinateur lors de l'accès à un réseau
+#ce fichier est consulté avant l'accès au serveur DNS
+#convertit les noms d’hôtes en adresses IP numériques
