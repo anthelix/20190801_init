@@ -1,0 +1,59 @@
+#!/bin/bash
+
+set -e
+set -o pipefail
+set -u
+
+#----------------
+# VARIABLES
+#----------------
+OUTPUT="Info $(date +'%d-%m-%Y').info.txt"
+
+#----------------
+#Function
+#----------------
+
+print_title()
+{
+    echo "blablabla">>$OUTPUT
+    echo "------------------------------------------" >>$OUTPUT
+    echo "$@" >>$OUTPUT
+    echo "------------------------------------------" >>$OUTPUT
+}
+#check_root()
+#{
+#    local meid=$(id -u)
+#    if [ $meid -ne 0 ]
+#    then
+#	echo "Be root to use the script"
+#	exit 999
+#    fi
+#}
+
+
+#-----------------
+#code
+#-----------------
+
+
+check_machine()
+{
+    echo "Hostname: $(hostname)" >$OUTPUT
+    echo "Check point at $(date)" >>$OUTPUT
+    print_title "Information reseau"
+    echo "Interface Reseau: $(ifconfig -l|)" >>$OUTPUT
+    
+    print_title "Broadcast and IP sous reseau "
+    #BROAD=$(ifconfig lo | grep broadcast | cut -d ' ' -f6)
+
+    
+    #echo "$BROAD" >>$OUTPUT
+    echo "\n"
+    echo "blablabla"
+    
+   
+    
+}
+
+#check_root
+check_machine
