@@ -1,3 +1,2 @@
-#donne le temps 
+#!/bin/bash
 uptime
-#donne l'heure : who -b, uptime -s

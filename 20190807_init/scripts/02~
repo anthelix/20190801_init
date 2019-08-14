@@ -1,4 +1,0 @@
-#!/bin/bash
-ARG1=${1:?"Give the login, please"}
-VAR=$(cat /etc/passwd | awk -F: '/'$ARG1'/{print $1}')
-echo " The login is $ARG1 and the User ID is $UID."  

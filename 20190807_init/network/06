@@ -1,2 +1,0 @@
-#/var/run/resolv.conf
-Le package resolvconf comprend une base de données simple pour les informations du serveur de nom d'exécution et un cadre simple pour notifier les applications des changements dans ces informations.   Resolvconf se positionne ainsi comme l'intermédiaire entre les programmes qui fournissent des informations sur les serveurs de noms et les applications qui utilisent ces informations.

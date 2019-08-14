@@ -1,3 +1,0 @@
-#!/bin/bash
-#liste des interfaces reseau
-ifconfig -l 

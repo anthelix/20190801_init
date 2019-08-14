@@ -1,1 +1,6 @@
-echo 'intr.42.fr 49.19.122.85' >> /ets/hosts
+#echo 'intra.42.fr 49.19.122.85' >> /ets/hosts
+#etre 'root' pour le changement
+#convertit les noms d'hotes en adresse IP numeriques
+#remplacer par DNS
+#utiliser pour verrouiller des adresses en les redirigeants vers une adresseIP inexistante
+#en coree du sud? moins triki que le nord

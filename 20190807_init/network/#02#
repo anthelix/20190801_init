@@ -1,4 +1,0 @@
-#!/bin/bash
-BROAD=$(ifconfig en0 | grep broadcast | cut -d ' ' -f6)
-echo $BROAD
-arp -a

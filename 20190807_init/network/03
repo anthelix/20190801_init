@@ -1,2 +1,0 @@
-#!/bin/bash
-ifconfig en1 ether | awk '/ether/{print $2}'

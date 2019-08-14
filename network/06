@@ -1,3 +1,2 @@
-#La configuration IP et la route par défaut concernaient le noyau Linux. Les serveurs DNS concernent le résolveur, une fonction logicielle qui permet de traduire les noms de domaines en adresses IP. Ce résolveur utilise pour cela les serveurs dont les adresses sont notées dans le fichier /etc/resolv.conf.
-
-/etc/resolv.conf
+#/etc/resolv.conf
+Le package resolvconf comprend une base de données simple pour les informations du serveur de nom d'exécution et un cadre simple pour notifier les applications des changements dans ces informations.   Resolvconf se positionne ainsi comme l'intermédiaire entre les programmes qui fournissent des informations sur les serveurs de noms et les applications qui utilisent ces informations.
